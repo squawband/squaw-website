@@ -20,3 +20,10 @@
 .contact-resource>a:hover,.contact-social>a:hover{color:var(--accent)}
 .contact-resource>a span,.contact-social>a span{color:var(--accent);font-size:18px}
 @media(max-width:800px){.contact-extras{grid-template-columns:1fr;gap:38px;margin-top:0}}
+
+/* Header social links */
+.site-header>.nav-socials{display:flex;align-items:center;gap:15px;margin-left:26px;flex-shrink:0;position:relative;z-index:2}
+.nav-socials>a{display:inline-flex;align-items:center;gap:6px;color:var(--paper);font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+.nav-socials>a:hover{color:var(--accent)}
+.nav-socials svg{display:block;width:16px;height:16px;fill:currentColor}
+@media(max-width:800px){.site-header>.nav-socials{gap:8px;margin-left:auto;padding-right:4px}.nav-socials .social-label{display:none}.nav-socials>a{width:30px;height:36px;justify-content:center}.nav-socials svg{width:17px;height:17px}}
