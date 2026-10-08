@@ -31,3 +31,9 @@
 /* Grössere Zeile im Band-Abschnitt */
 .band-copy > .eyebrow{font:600 22px var(--display);letter-spacing:normal}
 
+
+/* Link zu den bisherigen Konzerten */
+.past-shows{margin:20px 0 0;text-align:right}
+.past-shows a{display:inline-flex;align-items:center;gap:8px;color:var(--paper);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;transition:color .2s}
+.past-shows a:hover{color:var(--accent)}
+.past-shows a span{color:var(--accent);font-size:18px}
