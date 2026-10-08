@@ -27,3 +27,7 @@
 .nav-socials>a:hover{color:var(--accent)}
 .nav-socials svg{display:block;width:16px;height:16px;fill:currentColor}
 @media(max-width:800px){.site-header>.nav-socials{gap:8px;margin-left:auto;padding-right:4px}.nav-socials .social-label{display:none}.nav-socials>a{width:30px;height:36px;justify-content:center}.nav-socials svg{width:17px;height:17px}}
+
+/* Grössere Zeile im Band-Abschnitt */
+.band-copy > .eyebrow{font:600 22px var(--display);letter-spacing:normal}
+
