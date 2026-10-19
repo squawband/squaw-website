@@ -36,6 +36,11 @@
       #band .member { align-items: flex-start; gap: .4rem; }
       #band .instrument { text-align: right; }
     }
+    .photo-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .photo-gallery .photo-card,
+    .photo-gallery .photo-wide { grid-column: auto !important; display: block; width: 100%; aspect-ratio: 4 / 3; min-height: 0; overflow: hidden; }
+    .photo-gallery .photo-card img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    @media (max-width: 640px) { .photo-gallery { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -101,7 +106,7 @@
         <a class="video-card video-card-alt" href="https://www.youtube.com/watch?v=8WkJD5W9V2M" target="_blank" rel="noopener"><span class="play">▶</span><span class="video-label">SQUAW feat. Flavia · 2025</span><span class="video-title">All Stand Up</span></a>
       </div>
       <div class="photo-gallery" aria-label="SQUAW Bandfotos">
-        <a class="photo-card photo-wide" href="assets/band-portrait-2023.webp" target="_blank" rel="noopener">
+        <a class="photo-card" href="assets/band-portrait-2023.webp" target="_blank" rel="noopener">
           <img src="assets/band-portrait-2023.webp" alt="SQUAW – Bandfoto 2023 im dunklen Durchgang" loading="lazy">
           <span>Bandfoto · 2023</span>
         </a>
